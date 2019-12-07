@@ -38,7 +38,7 @@
         <h2>POST new Person:</h2>
 
         <label for="firstName">First Name:</label><input type="text" name="firstName" value="foo" id="postPersonFirstName"><br>
-        <label for="lastName">Last Name:</label><input type="text" name="lastName" value="bar" id="postPersonLastName"><br>
+        <label for="LAST_NAME">Last Name:</label><input type="text" name="LAST_NAME" value="bar" id="postPersonLastName"><br>
         <button type="button" name="submitPost" onclick="postPerson()">Submit POST</button>
       </section>
 
@@ -81,7 +81,7 @@ function postPerson(){
 
   var postData = JSON.stringify({
   "firstName": postFirstName,
-  "lastName": postLastName
+  "LAST_NAME": postLastName
 });
   console.log("Requesting post for person:");
   console.log(postData);
@@ -121,7 +121,7 @@ function putPerson(){
 
   var putData = JSON.stringify({
   "firstName": putFirstName,
-  "lastName": putLastName,
+  "LAST_NAME": putLastName,
   "id": putId
 });
   console.log("Requesting put for person:");
